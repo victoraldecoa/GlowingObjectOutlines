@@ -21,13 +21,13 @@ public class GlowObject : MonoBehaviour
 		}
 	}
 
-	private void OnMouseEnter()
+	public void Activate()
 	{
 		_targetColor = GlowColor;
 		enabled = true;
 	}
 
-	private void OnMouseExit()
+    public void Deactivate()
 	{
 		_targetColor = Color.black;
 		enabled = true;
